@@ -9,7 +9,11 @@
   </div>
 </form>
 <ul>
-	<li *ngFor='let quote of quotes'>{{quote.quote}}</li>
+	<div *ngFor='let quote of quotes'>
+		<li>{{quote.name}}</li>
+		<app-quote-by [quote]='quote'></app-quote-by>
+	</div>
+
 </ul>
 
 </div>
