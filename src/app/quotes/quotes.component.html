@@ -1,0 +1,15 @@
+<h2 id="header" >Quotes</h2>
+<hr>
+<div class="container">
+	<form>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="what's your favourite Quote?">
+    <input type="text" placeholder="who said that?" class="form-control">
+    <button id="submit">submit</button>
+  </div>
+</form>
+<ul>
+	<li *ngFor='let quote of quotes'>{{quote.quote}}</li>
+</ul>
+
+</div>
