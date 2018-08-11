@@ -1,10 +1,12 @@
 <div class="container">
-  <form>
+  <form #goalForm='ngForm'>
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="what's your favourite Quote?">
+    <textarea class="form-control" placeholder="what's your favourite Quote?" required rows="4" id="favQuote" [(ngModel)]="newQuote.name" name="name"></textarea>
+      <!-- testing 2 way data binding -->
+      Display {{newQuote.name}}
       </div>
       <div class="form-group">
-        <input type="text" placeholder="who said that?" class="form-control">
+        <input type="text" placeholder="who said that?" class="form-control" id="quoteBy">
       </div>
     <button id="submit">submit</button>
 
