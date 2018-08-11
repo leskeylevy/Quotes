@@ -2,12 +2,13 @@
 <hr>
 <div class="container">
 <div class="row">
-	<app-quote-form></app-quote-form>
+	<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>
 <ul>
-	<div *ngFor='let quote of quotes'>
+	<div *ngFor='let quote of quotes ;let i=index'>
 		<li>{{quote.name}}</li>
-		<app-quote-by [quote]='quote'></app-quote-by>
+		<button (click)='toogleDetails(i)'>SHOW MORE!</button>
+		<app-quote-by *ngIf="quote.showBy" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-by>
 	</div>
 
 </ul>
