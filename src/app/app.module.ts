@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteByComponent } from './quote-by/quote-by.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

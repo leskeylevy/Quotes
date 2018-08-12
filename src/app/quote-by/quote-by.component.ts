@@ -13,6 +13,11 @@ export class QuoteByComponent implements OnInit {
 
 quoteDelete(complete:boolean){
   this.isComplete.emit(complete);
+
+
+
+
+
 }
   constructor() { }
 

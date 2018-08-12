@@ -8,16 +8,18 @@ import{Quote} from'../quote'
 })
 export class QuotesComponent implements OnInit {
 
+
 quotes =[
   new Quote (1,'The future belongs to those who believe in the beauty of their dreams','Dr Leskey Levy'),
-  new Quote (2,'GO big or go big man','Me')
-]
+  new Quote (2,'GO big or go big man','Me'),
+];
 
 
 
 deleteQuote(iscomplete,index){
   if(iscomplete){
-    let toDelete=confirm('are you sure you want to delete ${this.quotes[index].name}')
+    let toDelete=confirm(`are you sure you want to delete this amazing quote by ~ ${this.quotes[index].by}`)
+
 
     if(toDelete){
       this.quotes.splice(index,1)
@@ -25,9 +27,6 @@ deleteQuote(iscomplete,index){
   }
 }
  addNewQuote(quote){
-   // let quoteLength = this.quotes.length;
-   // quote.id=quoteLength=1;
-   // quote.by = new Quote(quote.by)
    this.quotes.push(quote)
  }
 
