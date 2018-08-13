@@ -1,6 +1,6 @@
 <div class="container">
   <p id="quote-by">~{{quote.by}}~</p>
   <button (click)='quoteDelete(true)'> DELETE QUOTE</button>
-  <button ><i class="fas fa-thumbs-up"></i></button>
-  <button i class="fas fa-thumbs-down"></i></button>
+  <button class="btn btn-success" (click)="upvote()">Up vote:{{quote.upvote}}</button>
+  <button class="btn btn-primary" (click)="downvote()">Down vote:{{quote.downvote}}</button>
 </div>
