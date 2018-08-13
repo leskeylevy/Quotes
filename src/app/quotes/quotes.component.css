@@ -3,3 +3,9 @@
   background-color: black;
   color: grey;
 }
+.container{
+  float: right;
+}
+#quote{
+  color: white;
+}

@@ -7,13 +7,15 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteByComponent } from './quote-by/quote-by.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
     QuoteByComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
