@@ -6,6 +6,7 @@ export class Quote {
     public by: string,
     public upvote: number,
     public downvote: number) {
+    // public date: Date) {
     this.showBy = false
   }
 }

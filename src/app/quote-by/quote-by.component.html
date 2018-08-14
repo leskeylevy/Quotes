@@ -1,5 +1,6 @@
 <div class="container">
   <p id="quote-by">~{{quote.by}}~</p>
+  <p id="quote"> posted {{quote.date|dateCount}} Mins Ago</p>
   <button (click)='quoteDelete(true)'> DELETE QUOTE</button>
   <button class="btn btn-success" (click)="upvote()">Up vote:{{quote.upvote}}</button>
   <button class="btn btn-primary" (click)="downvote()">Down vote:{{quote.downvote}}</button>
